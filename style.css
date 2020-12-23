@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	outline: none;
+}
+body{
+	background: #6A7FDB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container{
+	background: #9FFFCB;
+	width: 600px;
+	height: 300px;
+	padding: 1.5rem;
+	border-radius: 18px;
+	color: #004E64;
+	box-shadow: 0px 0px 10px #004E64;
+}
+.pw-header .pw{
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #004E64;
+	justify-content: space-between;
+	padding: 0 1rem;
+	border-radius: 15px;
+}
+.pw-header .pw .pw-text{
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.pw button{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: #004E64;
+	padding-left: 1rem;
+}
+.pw-body .form-control{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.4rem;
+	user-select: none;
+}
+.pw-body .form-control input{
+	border: 1px solid #004E64;
+	background: transparent;
+	width: 50px;
+	padding-left: 0.5rem;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #004E64;
+}
+.button-active{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.button-active i{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #004E64;
+	background: #9FFFCB;
+	border-radius: 15px;
+	cursor: pointer;
+	margin: 0.25rem;
+	transition: 0.5s;
+}
+.button-active i:hover{
+	background: #8ddbb0;
+}
+.button-active i:active{
+	background: #649b7d;
+}
+.copyright{
+	user-select: none;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #014355;
+}
+
+@media (max-width: 750px){
+	.button-active{
+		top: 0;
+		right: 50%;
+		transform: translateX(50%);
+		flex-direction: row;
+	}
+}
+
+@media (max-width: 600px){
+	.container{
+		margin: 10px;
+		width: 95%;
+		height: auto;
+	}
+}
